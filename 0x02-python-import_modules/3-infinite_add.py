@@ -9,5 +9,5 @@ if __name__ == "__main__":
      result = 0
      for index in range(count):
          result += int(sys.argv[index + 1])
-     print(f"{result}"
+     print(f"{result}")
     

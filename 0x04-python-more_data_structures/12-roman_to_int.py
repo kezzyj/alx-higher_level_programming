@@ -2,7 +2,7 @@
 
 def roman_to_int(roman_string):
     """ converts a Roman numeral to an integer."""
-    if isinstance(roman_string, str) or roman_string == None:
+    if not isinstance(roman_string, str) or roman_string == None:
         return(0)
     roman_num = {
             "I": 1,
@@ -19,7 +19,7 @@ def roman_to_int(roman_string):
             return (0)
         if (i != (len(roman_string) - 1) and
                 roman_num[roman_string[i]] < roman_num[roman_string[i + 1]]):
-                num += roman_dict[roman_string[i]] * -1
+                num += roman_num[roman_string[i]] * -1
         else:
             num += roman_num[roman_string[i]]
     return(num)

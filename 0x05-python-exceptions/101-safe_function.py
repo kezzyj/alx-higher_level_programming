@@ -14,7 +14,7 @@ def safe_function(fct, *args):
         Otherwise - the result of the call to fct.
     """
     try:
-        func_result = fct(args)
+        func_result = fct(*args)
         return (func_result)
     except (ValueError):
         print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr)

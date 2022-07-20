@@ -2,6 +2,7 @@
 
 """Define a square with a size"""
 
+
 class Square:
     """Define a square with size"""
     def __init__(self, size=0):

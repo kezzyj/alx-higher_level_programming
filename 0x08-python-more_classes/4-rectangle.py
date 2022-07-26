@@ -45,7 +45,6 @@ class Rectangle:
         """Return the area of the Rectangle."""
         return (self.__width * self.__height)
 
-
     def perimeter(self):
         """Return the perimeter of the Rectangle."""
         if self.__width == 0 or self.__height == 0:
@@ -64,7 +63,6 @@ class Rectangle:
             if i != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
-
 
     def __repr__(self):
         """Return the string representation of the Rectangle."""

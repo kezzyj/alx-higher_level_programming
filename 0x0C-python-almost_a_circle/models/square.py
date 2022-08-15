@@ -42,16 +42,16 @@ class Square(Rectangle):
         if args and len(args) != 0:
             arg_c = 0
             for arg in args:
-                if arg_c = 0:
+                if arg_c == 0:
                     if arg is None:
                         self.__init__(self.size, self.x, self.y)
                     else:
                         self.id = arg
-                elif arg_c = 1:
+                elif arg_c == 1:
                     self.size = arg
-                elif arg_c = 2:
+                elif arg_c == 2:
                     self.x = arg
-                elif arg_c = 3:
+                elif arg_c == 3:
                     self.y = arg
                 arg_c += 1
         elif kwargs and len(kwargs) != 0:
@@ -74,7 +74,7 @@ class Square(Rectangle):
                 "id": self.id,
                 "size": self.width,
                 "x": self.x,
-                "y": self.
+                "y": self.y
         }
 
     def __str__(self):

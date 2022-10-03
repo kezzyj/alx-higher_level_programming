@@ -15,7 +15,3 @@ if (process.argv.length <= 3) {
   console.log(args[args.length - 2]);
 
 }
-
-Footer
-
-© 2022 GitHub, Inc.

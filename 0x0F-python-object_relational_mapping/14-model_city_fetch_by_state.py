@@ -39,7 +39,6 @@ if __name__ == "__main__":
     session = Session()
 
     rows = session.query(City, State).filter(City.state_id == State.id)\
-
                                      .order_by(City.id).all()
 
     for city, state in rows:
